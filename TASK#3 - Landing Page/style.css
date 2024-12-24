@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins',sans-serif ;
+}
+
+header{
+    background: #ffffff url(img/hd.jpg) center/cover no-repeat;
+    border-image: fill 0 linear-gradient(#0001, #0000);
+    width: 100%;
+    height: 120vh;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav,.logo{
+    font-weight: 600;
+}
+
+nav{
+    position: fixed;
+    background-color: #3B9EFF;
+    height: 70px;
+    margin: 12px 13px;
+    display: flex;
+    align-items: center;
+    border-radius: 23px;
+    z-index: 1000;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px  rgba(0, 0, 0, 0.3);
+}
+
+nav.active{
+    background-color: #FFFFFF;
+    color: black;
+    transform: scale(0.9);
+}
+
+nav i.active{
+    color: #0090FF;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.4s;
+    border-bottom: 3px solid transparent;
+    margin: 0 80px;
+    
+}
+
+nav i{
+    font-size: 2.7rem;
+    transform: translateX(15PX);
+    transition: 0.2s;
+    cursor: pointer;
+
+}
+nav i:hover{
+    color: #FFC107;
+}
+
+nav span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+nav a:hover{
+    color: #0090FF;
+    border-bottom: 3px solid #0090FF;
+}
+
+header .text-box{
+    text-align: center;
+    margin: 180px 0;
+    color: aliceblue;
+}
+
+header .text-box span{
+    color: #000;
+    font-size: 5rem;
+}
+
+header h1{
+    font-size: 3.3rem;
+    height: 12vh;
+}
+
+header h2{
+    color: #ffffffb6;
+}
+
+.card-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 23PX;
+    margin: 73px 0;
+    text-align: center;
+    background-color: aliceblue;
+    margin: 0 54px;
+    border-radius: 23px;
+    padding: 23px;
+    box-shadow: -5px 5px 36px 1px #636774 ;
+}
+
+.card-item img{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    padding: -23px;
+    border-radius: 63px 6px;
+}
+
+.card-item .center{
+    border-radius: 12PX;
+}
+
+.card-item .right{
+    border-radius: 6PX 63px ;
+}
+
+.card-item button{
+    transform: translateY(-10PX);
+    width: 152px;
+    height: 50px;
+    background-color: #0090FF;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 72px;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.card-item button:hover{
+    transform: scale(1.2);
+    color: aliceblue;
+    opacity: 0.7;
+}
+
+.text {
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 72px;
+}
+
+.text p{
+    color: #636774;
+}
+
+
+.pack .box-item{
+    margin-bottom: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 53PX;
+}
+
+.pack .box-item img{
+    width: 30%;
+    height: 250px;
+    border-radius: 35px 0 ;
+}
+
+.pack .text-box{
+    width: 33%;
+    text-align: justify;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pack .text-box p{
+    color: #636774;
+}
+
+.pack .price{
+    width: 15%;
+    background-color: #588CD0;
+    text-align: center;
+    padding: 19px;
+    border-radius: 0 43px 43px 0 ;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.pack .price button{
+    background-color: transparent;
+    width: 172px;
+    text-align: center;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.pack .price button:hover{
+    background-color: #0090FF;
+    transform: scale(1.2);
+}
+
+.gallery{
+    text-align: center;
+}
+
+.gallery h1{
+    margin: 32px 323px;
+    font-size: 2.6rem;
+    font-weight: bold;
+}
+
+
+.gallery .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50PX;
+    margin: 0 63px;
+}
+
+.part{
+    width: 370px;
+    height: 90vh;
+}
+
+.part img{
+    width: 100%;
+    border-radius: 34px;
+    box-shadow: -3px 5px 28px 0px rgba(0, 0, 0, 0.2);
+}
+.img-left{
+    height: 100%;
+}
+
+
+.img-center img{
+    height: 47%;
+}
+
+.logo-font{
+    display: flex;
+    font-size: 6.5rem;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #3B79C9;
+    margin: 83px 0 0 0;
+}
+
+.logo-font span{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+footer .container{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    gap: 190PX;
+    margin: 0 23px;
+}
+
+footer .container .icon .logo{
+    font-size: 10rem;
+    color: black;
+}
+
+footer .container .icon .social-icon{
+    font-size: 2.1rem;
+    border: 1px solid #636774;
+    margin: 0 3px;
+    border-radius: 50%;
+    padding: 5px;
+    color: #636774;
+    transition: 0.4s ease-in-out;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+footer .container .icon .social-icon:hover{
+    background-color: #3B79C9;
+    transform: scale(1.2);
+    color: white;
+}
+
+footer .container .icon .y:hover{
+    color: #FFFFFF;
+    background-color: red;
+}
+
+.contact{
+    font-size: 1.6rem;
+}
+
+.contact i{
+    margin: 12px 0;
+}
+
+.email{
+    font-size: 1.4rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.email #email{
+    width: 300px;
+    height: 10vh;
+    border-radius: 23px;
+    border: 2px solid black;
+    font-size: 1.2rem;
+}
+
+.email button{
+    background-color: #3B79C9;
+    width: 150px;
+    margin-left: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 23px;
+    margin-top: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 -5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.email button:hover{
+    transform: scale(1.1);
+    border-radius: 12px;
+}
+
+.color{
+    background-color: #636774;
+    height: 8vh;
+}
